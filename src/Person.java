@@ -126,7 +126,7 @@ public class Person {
      * @return the first name a space then the last name
      */
     public String fullName(){
-        return this.firstName + " " + this.lastName;
+        return this.getFirstName() + " " + this.getLastName();
     }
 
     /**
@@ -136,7 +136,7 @@ public class Person {
      * @return title firstName lastName
      */
     public String formalName(){
-        return this.title + " " + this.fullName();
+        return this.getTitle() + " " + this.fullName();
     }
 
     /**
